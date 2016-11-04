@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {
+	Text,
+	View
+} from 'react-native';
 
-export default class Bio extends React.Component {
+export default class Bio extends Component {
     constructor(props) {
         super(props);
         this.shouldComponentUpdate = false;
-    }
+    };
     render() {
-        return <div className='chatbot-bio'>
-            <span>{this.props.bio}</span>
-        </div>
-    }
+        return <View>
+            <Text>{this.props.bio}</Text>
+        </View>
+    };
 };

@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {
+    Text,
+    View
+} from 'react-native';
 
-export default class MessageView extends React.Component {
+export default class MessageView extends Component {
     constructor(props) {
         super(props);
         this.shouldComponentUpdate = false;
-    }
+    };
     render() {
         if (this.props.drewSaid) {        
-            return <li className='chatbot-message-view list-group-item'>
-                <span className='label label-primary'>DREW :</span> {this.props.text}
-            </li>
+            return <Text>DREW : {this.props.text}</Text>
         } else {
-            return <li className='chatbot-message-view list-group-item'>
-                <span className='label label-success'>YOU :</span> {this.props.text}
-            </li>
-        }
-    }
+            return <Text>YOU : {this.props.text}</Text>
+        };
+    };
 };
