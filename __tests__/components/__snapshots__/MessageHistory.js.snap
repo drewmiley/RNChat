@@ -1,0 +1,18 @@
+exports[`MessageHistory Rendering should match the snapshot 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    DREW : 
+    Hello
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail">
+    YOU : 
+    Hello
+  </Text>
+</View>
+`;

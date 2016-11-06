@@ -1,0 +1,8 @@
+exports[`Bio Rendering should match the snapshot 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail" />
+</View>
+`;
